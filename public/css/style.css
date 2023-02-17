@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.korona{
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+.korona a {
+  border-bottom: white solid 1px;
+}
+
+
+header{
+  width: 100%;
+  min-height: 680px;
+  background-image: url(http://curriculum.linew.co.jp/cafe-cafe/img/eyecatch.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+}
+
+
+.wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 15px 5%;
+  transition: all .5s ease;
+  flex-wrap: wrap;
+  top: 0;
+  margin: auto;
+}
+.wrap.showup {
+  transition:all .5s ease;
+  background-color: black;
+  top: 0;
+  position: fixed; 
+  z-index: 2;
+  
+}
+
+
+.logo {
+  flex: 25%;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  width: 180px;
+}
+.nav1 {
+  text-align: center;
+  line-height: 30px;
+  flex: 50%;
+  
+  line-height: 50px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  /* color: white; */
+  margin: auto;
+}
+.link {
+  padding: 0 25px;
+}
+.link a {
+  color: white;
+}
+.listmatome {
+  flex: 25%;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  line-height: 50px;
+}
+.kakusi {
+  display: none;
+  position: fixed;
+  top: 70px;
+  width: 13rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.sp_sain {
+  padding: 0 1rem;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+.sp_link {
+  padding: 0 1rem;
+  line-height: 50px;
+}
+.sp_link a {
+  color: black;
+}
+.sainmark {
+  display: none;
+  color: white;
+}
+
+
+.daimei {
+ width: 90%;
+ left: 5%;
+ top: 320px;
+ margin: auto;
+ position: absolute;
+ font-weight:bold;
+ font-size: 65px;
+ color: white; 
+ line-height: 60px;
+
+}
+
+.access {
+  margin: 40px 0;
+  padding: 0 5%;
+}
+.jikanbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+}
+.photo {
+  padding: 10px 0;
+  display: flex;
+}
+.gazou {
+  height: 65px;
+  width: 65px;
+}
+.gazou img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.jikan {
+  flex-flow: column;
+  display: flex;
+  padding: 10px;
+}
+.jikan a {
+  font-weight: bold;
+  font-size:14px;
+}
+
+.roke {
+  margin: 50px 0;
+  padding: 0 5%;
+}
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.matomebox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  column-gap: 15px;
+  row-gap: 35px;
+  padding-top: 10px;
+}
+.rokesyasin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.keitou {
+  font-weight: bold;
+  font-size:20px;
+}
+
+.goto {
+  margin: 50px 0;
+  padding: 0 5%;
+}
+.gotoeat {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 70px;
+  background-color: rgba(255,255,255,0.3);
+  padding: 10px;
+  transform: scale(1.1,1.2);
+}
+.gotoeat h2 {
+  font-size: 35px;
+} 
+.gotophoto img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.cafedukuri {
+  padding: 50px 5%;
+  background-color: black;
+  color: white;
+}
+.cafedukuri p {
+  font-weight: bold;
+}
+.ryouri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  column-gap: 15px;
+  padding-top: 10px;
+}
+.ryouribox img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+.text {
+  font-weight: bold;
+  font-size: large;
+}
+
+.host {
+  margin: 0;
+  padding: 70px 5%;
+}
+.nakama {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding-top: 10px;
+}
+.text2 {
+  font-weight: bold;
+  font-size: large;
+}
+.nakamabox img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+
+
+footer {
+  border-top: 1px solid gainsboro;
+  background-color: rgb(245, 245, 245);
+  padding: 5% 0;
+  font-size: 15px;
+}
+.wrapp {
+  margin: 0;
+  padding: 0 5%;
+
+}
+
+.footerin {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+h3 {
+  font-weight: bold;
+}
+footer li {
+  margin: 1rem 0;
+  color: rgb(79, 76, 76);
+}
+
+.sita {
+  padding-top: 15px;
+  color:rgb(79, 76, 76) ;
+  border-top: 1px solid gainsboro;
+}
+.on {
+  color:rgb(79, 76, 76) ;
+}
+
+.pagetop {
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+}
+.pagetop a {
+  color: white;
+  background-color: black;
+  text-align: center;
+  line-height: 3rem;
+  height: 3rem;
+  padding: 15px 15px;
+}
+
+.datehyou table {
+  width: 100%;
+}
+.koumoku {
+  border: 1px solid black;
+  background-color: gainsboro;
+  text-align: center; 
+}
+.datehyou  td{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: ghostwhite;
+  text-align: center; 
+  word-wrap:break-word;
+  max-width: 100px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+.list {
+  display: none;
+}
+.link {
+  display: none;
+}
+.nav1 {
+  display: none;
+}
+
+.sainmark {
+  display: block;
+}
+.sain {
+  display: none;
+}
+.sainmark img {
+  width:  50px;
+}
+
+.jikanbox {
+  grid-template-columns:repeat(2, 1fr);
+}
+.matomebox {
+  grid-template-columns:repeat(2, 1fr);
+  
+}
+
+
+.gotoeat {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 70px;
+  background-color: rgba(255,255,255,0.3);
+  padding: 10px;
+  transform: scale(1.1,1.2);
+}
+
+.ryouribox p {
+  font-weight: lighter;
+}
+
+}
